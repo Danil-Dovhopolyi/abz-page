@@ -1,0 +1,29 @@
+@use '../../../styles/colors' as *;
+@use 'sass:color';
+
+.button {
+  min-width: 100px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 80px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 26px;
+  transition: all 0.3s ease;
+
+  &--normal {
+    background-color: color('primary');
+
+    &:hover {
+      background-color: color.adjust(color('primary'), $lightness: -10%);
+    }
+  }
+
+  &--disabled {
+    background-color: #b4b4b4;
+    color: rgba(255, 255, 255, 0.87);
+    cursor: not-allowed;
+  }
+}
