@@ -14,66 +14,6 @@ body {
   @include container;
 }
 
-.hero {
-  min-height: 150px;
-  padding: 164px 0;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/background.jpeg');
-  background-repeat: no-repeat;
-  background-size: 220%;
-  background-position: 50% 80%;
-  margin: 0 auto;
-  margin-bottom: 140px;
-
-
-  @include mobile {
-    padding: 40px 16px;
-    min-height: 500px;
-    height: 100%;
-  }
-
-  @include tablet {
-    max-width: 768px;
-    padding: 90px 0;
-  }
-
-  @include desktop {
-    max-width: 1024px;
-  }
-
-  @include ultra-wide {
-    max-width: $container-ultra-wide;
-  }
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 380px;
-    margin: 0 auto;
-
-    @include mobile {
-      max-width: 360px;
-    }
-
-    @include ultra-wide {
-      max-width: 380px;
-    }
-  }
-
-  &__title {
-    margin-bottom: 21px;
-    color: white;
-  }
-
-  &__text {
-    margin-bottom: 32px;
-    color: white;
-    max-width: 380px;
-    width: 100%;
-  }
-}
-
 .users-grid {
   @include grid($grid-columns-mobile);
 
