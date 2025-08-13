@@ -1,0 +1,23 @@
+@use 'fonts' as *;
+
+%heading-1 {
+  font-family: $font-primary;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: $font-regular;
+}
+
+%body-text {
+  font-family: $font-primary;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: $font-regular;
+}
+
+.heading-1 {
+  @extend %heading-1;
+}
+
+.body {
+  @extend %body-text;
+}
