@@ -13,6 +13,11 @@
     justify-content: space-between;
   }
 
+  &__logo img {
+    width: 104px;
+    height: 26px;
+    display: block;
+  }
 
   &__nav {
     display: flex;
